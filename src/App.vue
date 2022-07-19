@@ -43,20 +43,17 @@ body{
 }
 
 nav {
-  //padding: 30px;
   text-align: left;
   display: flex;
   flex-direction: row;
   line-height: 1px;
   text-decoration: none;
-
   a {
-    font-weight: bold;
     color: #2c3e50;
-     text-decoration: none;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #05B169;
     }
   }
 }
@@ -102,8 +99,8 @@ nav {
   justify-items: center;
 }
 .bread {
-  margin-top: 17px;
-  padding: .9em;
+  margin-top: 7px;
+  padding: 1.9em;
 }
 .small-text{
   font-size: 12px;

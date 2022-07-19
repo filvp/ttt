@@ -1,7 +1,5 @@
 <template>
-
   <div class='title container'><h1>Штукатурка цементная цокольная Knauf Sockelpultz 25 кг</h1><img alt="item" src="../assets/i/share-icon.svg"></div>
-
   <div class="slidertext container">
     <vueper-slides
         class="no-shadow"
@@ -16,7 +14,6 @@
     </vueper-slides>
   </div>
   <div class="carditem container">
-
   <div class="carditem__image">
       <div class="carditem__image__vidgets">
           <div class="carditem__image__vidgets__color">
@@ -31,8 +28,6 @@
       </div>
       <div><img alt="item" src="../assets/i/good-item.svg"></div>
     </div>
-
-
     <div class="carditem__text">
     <table>
           <tr>
@@ -63,7 +58,6 @@
             <img alt="item" src="../assets/i/knauf.svg">
     </div>
 
-
     <div class="carditem__suggest">
             <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
             <div class="price-block"><div class='price-text'>39 900 </div><div>РУБ/ ШТ</div></div>
@@ -78,10 +72,7 @@
             <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
             </div>
     </div>
-      </div>
-
-
- 
+      </div> 
   <div class="sliderimg container">
             <vueper-slides
                 class="no-shadow"
@@ -90,18 +81,13 @@
                 :gap="3"
                 :slide-ratio="1 / 4"
                 :dragging-distance="200"
-
-
                 :bullets="false"
                 :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
               <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
             </vueper-slides>
   </div>
-  
-
-
-
 </template>
+
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
@@ -298,7 +284,7 @@ h1{
 .sliderimg{
   width: 30%;
   padding-top: 5em;
-  padding-left: 5em;
+  padding-left: 6em;
 }
 
 </style>
