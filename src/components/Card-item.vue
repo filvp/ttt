@@ -24,77 +24,85 @@
 
     <div class="card-image">
       <div class="vidgets">
-            <div class="vidgets-color">
+          <div class="vidgets-color">
                 <div class="orange-block">
-                  Хит продаж
+                Хит продаж
                 </div>
-              <div class="red-block">
-                  Акция
-              </div>
+                <div class="red-block">
+                Акция
+                </div>
             </div>
-
           <div class="v-spisok" @click="onclick"><img alt="item" src="../assets/i/plus.png">Добавить</div>
-
       </div>
-          <div><img alt="item" src="../assets/i/item.png"></div>
+      <div><img alt="item" src="../assets/i/good-item.svg"></div>
     </div>
-          <div class="card-text">
-            <table>
-  <tr>
-    <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td>Коротко о товаре</td>
-  </tr>
-   <tr>
-    <td></td><td>Вес · 25—50 кг</td>
-  </tr>
-   <tr>
-    <td></td><td>Основа. Гипсовая супер штукатурка Knauf S</td>
-  </tr>
-   <tr>
-    <td></td><td class="blue-text">Все  характеристики</td>
-  </tr>
-   <tr>
-    <td><img alt="item" src="../assets/i/like-icon.svg"></td><td>Пользуется спросом</td>
-  </tr>
-  <tr>
-    <td></td><td class="underline">2 274 просмотров</td>
-  </tr>
-  <tr>
-    <td></td><td>В наличии в Москве на 4 марта 2020</td>
-  </tr>
-  <tr>
-    <td></td><td class="blue-text">140 предложений</td>
-  </tr>
 
-</table>        
-          
+
+    <div class="card-text">
+    <table>
+          <tr>
+            <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td>Коротко о товаре</td>
+          </tr>
+          <tr>
+            <td></td><td>Вес · 25—50 кг</td>
+          </tr>
+          <tr>
+            <td></td><td>Основа. Гипсовая супер штукатурка Knauf S</td>
+          </tr>
+          <tr>
+            <td></td><td class="blue-text">Все  характеристики</td>
+          </tr>
+          <tr>
+            <td><img alt="item" src="../assets/i/like-icon.svg"></td><td>Пользуется спросом</td>
+          </tr>
+          <tr>
+            <td></td><td class="underline">2 274 просмотров</td>
+          </tr>
+          <tr>
+            <td></td><td>В наличии в Москве на 4 марта 2020</td>
+          </tr>
+          <tr>
+            <td></td><td class="blue-text">140 предложений</td>
+          </tr>
+    </table>                  
             <img alt="item" src="../assets/i/knauf.svg">
-
-            </div>
-          <div class="suggest-item">
-            <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
-            <div class='price'>39 900 </div><div>РУБ/ ШТ</div>
-            <div>В наличии</div>
-            <button class="catalog">Перейти в магазин</button>
-            <div><img alt="item" src="../assets/i/secur.png">Провереннный поставщик</div>
-            </div>
-
-
     </div>
+
+
+    <div class="suggest-item">
+            <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
+            <div class="price-text"><div class='price'>39 900 </div><div>РУБ/ ШТ</div></div>
+            <div>В наличии</div>
+            <div class="catalog">Перейти в магазин</div>
+            <div class='postavshik'><div ><img alt="item" src="../assets/i/secur.png"></div>
+            <div>
+            <p>Провереннный поставщик</p>
+            <p>ООО ВсеИнструменты.ру</p>
+            <p>Дилер</p>
+            </div>
+            <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
+            </div>
+    </div>
+      </div>
+
+
+ 
   <div class="slidertext2 container">
-    <vueper-slides
-        class="no-shadow"
-        :visible-slides="3"
-        slide-multiple
-        :gap="3"
-        :slide-ratio="1 / 4"
-        :dragging-distance="200"
+            <vueper-slides
+                class="no-shadow"
+                :visible-slides="3"
+                slide-multiple
+                :gap="3"
+                :slide-ratio="1 / 4"
+                :dragging-distance="200"
 
 
-        :bullets="false"
-        :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
-    </vueper-slides>
+                :bullets="false"
+                :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
+              <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
+            </vueper-slides>
   </div>
+  
 
 
 
@@ -179,6 +187,7 @@ export default {
   border-radius: 4px;
   flex-direction: column;
   padding: 1.3em;
+  width: 30%;
 }
 .card-text{
   text-align: left;
@@ -229,6 +238,15 @@ export default {
   border-radius: 4px;
   text-align: left;
   padding: 1.3em;
+  border-top: 4px solid #FED83D;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+
+}
+.suggest-item div{
+ padding: .1em;
+
 }
 .sliderimg{
   /*width: 50%;*/
@@ -242,7 +260,7 @@ export default {
   height: 70px !important;
   /*padding-top: -350px;*/
   position: relative;
-  background-color: #ECEFF1;
+  /* background-color: #ECEFF1; */
 }
 .slidertext2{
   width: 30%;
@@ -278,6 +296,17 @@ h1{
 }
 .vueperslides__track{
   height: 70px;
+}
+.postavshik{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin-top: .8em;
+}
+.price-text{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
 }
 
 
