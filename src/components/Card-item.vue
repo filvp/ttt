@@ -31,25 +31,25 @@
     <div class="carditem__text">
     <table>
           <tr>
-            <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td>Коротко о товаре</td>
+            <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td class='semibold-text'>Коротко о товаре</td>
           </tr>
           <tr>
-            <td></td><td>Вес · 25—50 кг</td>
+            <td></td><td>Вес · <span class="grey-text">25—50 кг</span></td>
           </tr>
           <tr>
-            <td></td><td>Основа. Гипсовая супер штукатурка Knauf S</td>
+            <td></td><td>Основа ·<span class="grey-text">Гипсовая супер штукатурка Knauf S</span></td>
           </tr>
           <tr>
             <td></td><td class="blue-text">Все  характеристики</td>
           </tr>
           <tr>
-            <td><img alt="item" src="../assets/i/like-icon.svg"></td><td>Пользуется спросом</td>
+            <td><img alt="item" src="../assets/i/like-icon.svg"></td><td class='semibold-text'>Пользуется спросом</td>
           </tr>
           <tr>
             <td></td><td class="underline-text">2 274 просмотров</td>
           </tr>
           <tr>
-            <td></td><td>В наличии в Москве на 4 марта 2020</td>
+            <td><img alt="item" src="../assets/i/check-icon.svg"></td><td class='semibold-text'>В наличии в Москве на 4 марта 2020</td>
           </tr>
           <tr>
             <td></td><td class="blue-text">140 предложений</td>
@@ -59,14 +59,14 @@
     </div>
 
     <div class="carditem__suggest">
-            <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
-            <div class="price-block"><div class='price-text'>39 900 </div><div>РУБ/ ШТ</div></div>
+            <div class='uppercase-text semibold-text'><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
+            <div class="price-block"><div class='price-text'>39 900 </div><div class="margin-text">РУБ/ ШТ</div></div>
             <div class='green-text'>В наличии</div>
             <div class="catalog">Перейти в магазин</div>
             <div class='postavshik-block'><div ><img alt="item" src="../assets/i/security.svg"></div>
             <div>
             <p class='green-text'>Провереннный поставщик</p>
-            <p>ООО ВсеИнструменты.ру</p>
+            <p class="semibold-text">ООО ВсеИнструменты.ру</p>
             <p class='green-text'>Дилер</p>
             </div>
             <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
@@ -100,37 +100,37 @@ export default {
   data: () => ({
     slides: [
       {
-        title: 'Штукатурка',
+        title: 'Где купить',
         content: 'Штукатурка',
         image: 'https://filvp.github.io/i/good1.svg'
       },
       {
-        title: 'Обои',
+        title: 'Описание',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good2.svg'
       },
       {
-        title: 'Цемент',
+        title: 'Характеристики',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good3.svg'
       },
       {
-        title: 'Утеплители',
+        title: 'Календарь низких цен',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good1.svg'
       },
       {
-        title: 'Стекловата',
+        title: 'Динамика цен',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good1.svg'
       },
        {
-        title: 'Теплоизоляторы',
+        title: 'Сравнение',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good1.svg'
       },
        {
-        title: 'Стекловата',
+        title: 'Рекомендации',
         content: 'Slide 2 content.',
         image: 'https://filvp.github.io/i/good1.svg'
       }
@@ -158,7 +158,9 @@ h1{
   display: flex;
   flex-direction: row;
 }
-
+.title img{
+  padding-left: .5em;
+}
 .carditem{
   display: flex;
   justify-content: space-around; 
@@ -250,6 +252,27 @@ h1{
   text-transform: uppercase;
   font-weight: 600;
 }
+.semibold-text{
+  font-weight: 600;
+}
+.uppercase-text{
+  text-transform: uppercase;
+  font-weight:
+}
+.uppercase-text img{
+  padding-right: .5em;
+}
+.catalog{
+  background-color: #FED83D;
+  border-radius: 4px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .7em;
+  margin-top: .9em;
+  font-weight: 600;
+}
 
 .blue-text{
   color: #1652F0;
@@ -259,6 +282,12 @@ h1{
   text-decoration-style: dotted;
   /* border-bottom: 1px red solid;
   width: 150px; */
+}
+.grey-text{
+  color: #708598;
+}
+.margin-text{
+  margin-top: 1em;
 }
 .vueperslides__track{
   height: 70px;
@@ -272,7 +301,7 @@ h1{
 .price-block{
   display: flex;
   flex-direction: row;
-  justify-items: center;
+  justify-items: last baseline;
 }
 
 .slidertext{

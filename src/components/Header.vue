@@ -88,6 +88,9 @@ export default {
 .header__lowerpart__catalog img{ 
   padding-right: .2em;
 }
+.header__toppart__upleftmenu__services img{
+  padding-left: .5em;
+}
 
 
 
