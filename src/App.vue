@@ -9,6 +9,7 @@
       <router-link to="/about">Шпаклевки</router-link> >
       <router-link to="/">Шпаклевка</router-link>
     </nav>
+    bjbkjb
 
     <router-view/>
   </div>
