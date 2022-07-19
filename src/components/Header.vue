@@ -4,7 +4,7 @@
      <div class="header__toppart__location">
             <div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div></div>
       <div class="header__toppart__upleftmenu">
-            <div class="header__toppart__upleftmenu__services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.png"></div></div>
+            <div class="header__toppart__upleftmenu__services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.svg"></div></div>
             </div>
      </div>
    

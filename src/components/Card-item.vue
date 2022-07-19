@@ -24,7 +24,7 @@
                 Акция
                 </div>
             </div>
-          <div class="carditem__image__vidgets__color__spisok" @click="onclick"><img alt="item" src="../assets/i/plus.png">Добавить</div>
+          <div class="carditem__image__vidgets__color__spisok" @click="onclick"><img alt="item" src="../assets/i/plus.svg">Добавить</div>
       </div>
       <div><img alt="item" src="../assets/i/good-item.svg"></div>
     </div>
@@ -63,7 +63,7 @@
             <div class="price-block"><div class='price-text'>39 900 </div><div>РУБ/ ШТ</div></div>
             <div class='green-text'>В наличии</div>
             <div class="catalog">Перейти в магазин</div>
-            <div class='postavshik-block'><div ><img alt="item" src="../assets/i/secur.png"></div>
+            <div class='postavshik-block'><div ><img alt="item" src="../assets/i/security.svg"></div>
             <div>
             <p class='green-text'>Провереннный поставщик</p>
             <p>ООО ВсеИнструменты.ру</p>
