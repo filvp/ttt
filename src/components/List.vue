@@ -33,6 +33,5 @@ export default {
     padding-right: .2em;
   }
 }
-
 </style>
 

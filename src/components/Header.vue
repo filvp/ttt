@@ -1,21 +1,22 @@
 <template>
   <div class="header">
    <div class="header__toppart">   
-     <div class="header__toppart__location">
-            <div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div></div>
-      <div class="header__toppart__upleftmenu">
+        <div class="header__toppart__location">
+            <div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div>
+        </div>
+        <div class="header__toppart__upleftmenu">
             <div class="header__toppart__upleftmenu__services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.svg"></div></div>
-            </div>
-     </div>
-   
-  <div class="header__lowerpart">
-    <div class="header__lowerpart__logo"><img alt="item" src="../assets/i/logo.svg"></div>
-    <div class="header__lowerpart__catalog"><img alt="item" src="../assets/i/menu-icon.svg">Каталог</div>
-    <Search />
-    <List />
-    <div class="header__lowerpart__login">А
+        </div>
     </div>
-  </div>
+   
+    <div class="header__lowerpart">
+        <div class="header__lowerpart__logo"><img alt="item" src="../assets/i/logo.svg"></div>
+        <div class="header__lowerpart__catalog"><img alt="item" src="../assets/i/menu-icon.svg">Каталог</div>
+        <Search />
+        <List />
+        <div class="header__lowerpart__login">А
+        </div>
+    </div>
   </div>
 
 </template>
@@ -88,7 +89,6 @@ export default {
     padding-right: .2em;
   }
 }
-
 .header__toppart__upleftmenu__services img{
   padding-left: .5em;
 }

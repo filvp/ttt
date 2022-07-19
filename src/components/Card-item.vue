@@ -16,61 +16,61 @@
   <div class="carditem container">
   <div class="carditem__image">
       <div class="carditem__image__vidgets">
-          <div class="carditem__image__vidgets__color">
-                <div class="carditem__image__vidgets__color__orange">
-                Хит продаж
-                </div>
-                <div class="carditem__image__vidgets__color__red">
-                Акция
-                </div>
-            </div>
-          <div class="carditem__image__vidgets__color__spisok" @click="onclick"><img alt="item" src="../assets/i/plus.svg">Добавить</div>
-      </div>
+              <div class="carditem__image__vidgets__color">
+                    <div class="carditem__image__vidgets__color__orange">
+                    Хит продаж
+                    </div>
+                    <div class="carditem__image__vidgets__color__red">
+                    Акция
+                    </div>
+              </div>
+              <div class="carditem__image__vidgets__color__spisok" @click="onclick"><img alt="item" src="../assets/i/plus.svg">Добавить</div>
+          </div>
       <div><img alt="item" src="../assets/i/good-item.svg"></div>
     </div>
     <div class="carditem__text">
-    <table>
-          <tr>
-            <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td class='semibold-text'>Коротко о товаре</td>
-          </tr>
-          <tr>
-            <td></td><td>Вес · <span class="grey-text">25—50 кг</span></td>
-          </tr>
-          <tr>
-            <td></td><td>Основа ·<span class="grey-text">Гипсовая супер штукатурка Knauf S</span></td>
-          </tr>
-          <tr>
-            <td></td><td class="blue-text">Все  характеристики</td>
-          </tr>
-          <tr>
-            <td><img alt="item" src="../assets/i/like-icon.svg"></td><td class='semibold-text'>Пользуется спросом</td>
-          </tr>
-          <tr>
-            <td></td><td class="underline-text">2 274 просмотров</td>
-          </tr>
-          <tr>
-            <td><img alt="item" src="../assets/i/check-icon.svg"></td><td class='semibold-text'>В наличии в Москве на 4 марта 2020</td>
-          </tr>
-          <tr>
-            <td></td><td class="blue-text">140 предложений</td>
-          </tr>
-    </table>                  
+        <table>
+              <tr>
+                <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td class='semibold-text'>Коротко о товаре</td>
+              </tr>
+              <tr>  
+                <td></td><td>Вес · <span class="grey-text">25—50 кг</span></td>
+              </tr>
+              <tr>
+                <td></td><td>Основа ·<span class="grey-text">Гипсовая супер штукатурка Knauf S</span></td>
+              </tr>
+              <tr>
+                <td></td><td class="blue-text">Все  характеристики</td>
+              </tr>
+              <tr>
+                <td><img alt="item" src="../assets/i/like-icon.svg"></td><td class='semibold-text'>Пользуется спросом</td>
+              </tr>
+              <tr>
+                <td></td><td class="underline-text">2 274 просмотров</td>
+              </tr>
+              <tr>
+                <td><img alt="item" src="../assets/i/check-icon.svg"></td><td class='semibold-text'>В наличии в Москве на 4 марта 2020</td>
+              </tr>
+              <tr>
+                <td></td><td class="blue-text">140 предложений</td>
+              </tr>
+        </table>                  
             <img alt="item" src="../assets/i/knauf.svg">
     </div>
 
     <div class="carditem__suggest">
-            <div class='uppercase-text semibold-text'><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
-            <div class="price-block"><div class='price-text'>39 900 </div><div class="margin-text">РУБ/ ШТ</div></div>
-            <div class='green-text'>В наличии</div>
-            <div class="catalog">Перейти в магазин</div>
-            <div class='postavshik-block'><div ><img alt="item" src="../assets/i/security.svg"></div>
-            <div>
-            <p class='green-text'>Провереннный поставщик</p>
-            <p class="semibold-text">ООО ВсеИнструменты.ру</p>
-            <p class='green-text'>Дилер</p>
-            </div>
-            <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
-            </div>
+              <div class='uppercase-text semibold-text'><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
+              <div class="price-block"><div class='price-text'>39 900 </div><div class="margin-text">РУБ/ ШТ</div></div>
+              <div class='green-text'>В наличии</div>
+              <div class="catalog">Перейти в магазин</div>
+              <div class='postavshik-block'><div ><img alt="item" src="../assets/i/security.svg"></div>
+              <div>
+              <p class='green-text'>Провереннный поставщик</p>
+              <p class="semibold-text">ООО ВсеИнструменты.ру</p>
+              <p class='green-text'>Дилер</p>
+              </div>
+              <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
+              </div>
     </div>
       </div> 
   <div class="sliderimg container">
@@ -144,7 +144,7 @@ export default {
   methods: {
     onclick(){
       console.log(this.list)
-      this.list.push("Штукатурка")
+      this.list.push("+1")
     }
   }
 }
@@ -174,7 +174,7 @@ export default {
   justify-content: space-between;
 }
 .carditem__image__vidgets__color__orange{
-  padding: .6em;
+  padding: .6em 1.5em;
   margin: .2em;
   background: #F2994A;
   border-radius: 4px;
@@ -184,7 +184,7 @@ export default {
   font-weight: bold;
 }
 .carditem__image__vidgets__color__red{
-  padding: .6em;
+  padding: .6em 1.5em;
   margin: .2em;
   background-color: #E92F2F;
   border-radius: 4px;
