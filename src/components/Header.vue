@@ -1,20 +1,19 @@
 <template>
   <div class="header">
-   <div class="up-header bggrey">
-   
-     <div class="location">
+   <div class="header__toppart">   
+     <div class="header__toppart__location">
             <div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div></div>
-      <div class="up-left-menu">
-            <div class="services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.png"></div></div>
+      <div class="header__toppart__upleftmenu">
+            <div class="header__toppart__upleftmenu__services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.png"></div></div>
             </div>
      </div>
    
-  <div class="low-header">
-    <div class="logo"><img alt="item" src="../assets/i/logo.svg"></div>
-    <div class="catalog"><img alt="item" src="../assets/i/menu-icon.png">Каталог</div>
+  <div class="header__lowerpart">
+    <div class="header__lowerpart__logo"><img alt="item" src="../assets/i/logo.svg"></div>
+    <div class="header__lowerpart__catalog"><img alt="item" src="../assets/i/menu-icon.svg">Каталог</div>
     <Search />
     <List />
-    <div class="login">А
+    <div class="header__lowerpart__login">А
     </div>
   </div>
   </div>
@@ -24,63 +23,59 @@
 import Search from "@/components/Search"
 import List from "@/components/List"
 
-
 export default {
   components: {
     Search,
     List
   }
-
 }
 </script>
+  /*header style*/
 <style>
-.up-header { 
+.header__toppart { 
   display: flex;
   justify-content: space-between;
   justify-items: center;
-  font-size: 12px;
   height: 32px;
   margin: 0 6%; 
-  /* padding: .6em 0; */
+  font-size: 12px;
 }
-
-.up-left-menu div{
-  /*padding: .5em;*/
-}
-.location div{
+.header__toppart__location div{
   padding: .2em;
 }
-.header{
-   
-}
-.location{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.up-left-menu{
+.header__toppart__upleftmenu{
     display: flex;
   align-items: center;
   justify-content: center;
 }
-.login{
+.header__toppart__location{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+.header__toppart__upleftmenu__services div{
+  padding: .9em;
+}
+.header__toppart__upleftmenu__services{
+  display: flex;
+  justify-content: space-around;
+}
+.header__lowerpart__login{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #9B51E0;
   color: white;
-  /*transform: translateY(-50%);*/
   vertical-align: middle;
   line-height: 50px;
 }
-.low-header {
+.header__lowerpart {
   display: flex;
   justify-content: space-around;
-  /*justify-items: center;*/
   padding: .6em 0;
   height: 76px;
 }
-.catalog{
+.header__lowerpart__catalog{
   background-color: #FED83D;
   border-radius: 4px;
   height: 40px;
@@ -90,17 +85,6 @@ export default {
   padding: 0 .7em;
 }
 
-.location{
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-}
-.services div{
-  padding: .9em;
-}
-.services{
-  display: flex;
-  justify-content: space-around;
-}
+
 
 </style>
