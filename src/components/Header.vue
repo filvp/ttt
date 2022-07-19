@@ -1,15 +1,17 @@
 <template>
   <div class="header">
-   <div class="up-header">
-     <div class="location"><div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div></div>
-     <div class="up-left-menu">
-
-     <div class="services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.png"></div></div>
-       </div>
-  </div>
+   <div class="up-header bggrey">
+   
+     <div class="location">
+            <div><img alt="item" src="../assets/i/location.svg"></div><div>Волгоградская область</div></div>
+      <div class="up-left-menu">
+            <div class="services"><div>Тендеры</div><div>Базы подрядчиков</div><div>Другие сервисы<img alt="item" src="../assets/i/arrow-down.png"></div></div>
+            </div>
+     </div>
+   
   <div class="low-header">
-    <div class="logo"><img alt="item" src="../assets/i/knauf.svg"></div>
-    <div class="catalog"><div><img alt="item" src="../assets/i/menu-icon.png"></div><div>Каталог</div></div>
+    <div class="logo"><img alt="item" src="../assets/i/logo.svg"></div>
+    <div class="catalog"><img alt="item" src="../assets/i/menu-icon.png">Каталог</div>
     <Search />
     <List />
     <div class="login">А
@@ -32,48 +34,34 @@ export default {
 }
 </script>
 <style>
-.card-image{
-  display: flex;
-}
-.card-item{
+.up-header { 
   display: flex;
   justify-content: space-between;
-}
-.low-header {
-  display: flex;
-  justify-content: space-around;
-  /*justify-items: center;*/
-  padding: .6em 0;
-  height: 76px;
-}
-.up-header {
-  background: #FAFBFC;
-  display: flex;
-  justify-content: space-around;
   justify-items: center;
   font-size: 12px;
   height: 32px;
-  padding: .6em 0;
+  margin: 0 6%; 
+  /* padding: .6em 0; */
 }
+
 .up-left-menu div{
   /*padding: .5em;*/
 }
 .location div{
   padding: .2em;
-
 }
 .header{
-  /*width: 85%;*/
+   
 }
 .location{
   display: flex;
-  justify-content: space-around;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 .up-left-menu{
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .login{
   width: 50px;
@@ -85,17 +73,23 @@ export default {
   vertical-align: middle;
   line-height: 50px;
 }
+.low-header {
+  display: flex;
+  justify-content: space-around;
+  /*justify-items: center;*/
+  padding: .6em 0;
+  height: 76px;
+}
 .catalog{
   background-color: #FED83D;
   border-radius: 4px;
   height: 40px;
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .7em;
 }
-.catalog div{
-  padding: .3em;
-}
+
 .location{
   display: flex;
   justify-content: space-around;
@@ -108,7 +102,5 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-
-
 
 </style>

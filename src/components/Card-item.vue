@@ -4,11 +4,13 @@
 <link href="https://unpkg.com/vueperslides/dist/vueperslides.css" rel="stylesheet">
 </head>
 <template>
+<div class='container'>
   <h1>Штукатурка цементная цокольная Knauf Sockelpultz 25 кг</h1>
-  <div class="slidertext">
+  </div>
+  <div class="slidertext container">
     <vueper-slides
         class="no-shadow"
-        :visible-slides="4"
+        :visible-slides="5"
         slide-multiple
         :gap="3"
         :slide-ratio="1 / 4"
@@ -18,7 +20,7 @@
       <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" />
     </vueper-slides>
   </div>
-  <div class="card-item">
+  <div class="card-item container">
 
     <div class="card-image">
       <div class="vidgets">
@@ -37,21 +39,40 @@
           <div><img alt="item" src="../assets/i/item.png"></div>
     </div>
           <div class="card-text">
-            <div><img alt="item" src="../assets/i/about_item.png">Коротко о товаре</div>
-            <div>Вес · 25—50 кг</div>
-            <div>Основа. Гипсовая супер штукатурка Knauf S</div>
-            <div class="blue-text">Все  характеристики</div>
-            <div><img alt="item" src="../assets/i/like-item.png">Пользуется спросом</div>
-            <div class="underline">2 274 просмотров </div>
-            <div>В наличии в Москве на 4 марта 2020</div>
-            <div class="blue-text">140 предложений</div>
-            <img alt="item" src="../assets/i/knauflogo.png">
+            <table>
+  <tr>
+    <td><img alt="item" src="../assets/i/list-list-icon.svg"></td><td>Коротко о товаре</td>
+  </tr>
+   <tr>
+    <td></td><td>Вес · 25—50 кг</td>
+  </tr>
+   <tr>
+    <td></td><td>Основа. Гипсовая супер штукатурка Knauf S</td>
+  </tr>
+   <tr>
+    <td></td><td class="blue-text">Все  характеристики</td>
+  </tr>
+   <tr>
+    <td><img alt="item" src="../assets/i/like-icon.svg"></td><td>Пользуется спросом</td>
+  </tr>
+  <tr>
+    <td></td><td class="underline">2 274 просмотров</td>
+  </tr>
+  <tr>
+    <td></td><td>В наличии в Москве на 4 марта 2020</td>
+  </tr>
+  <tr>
+    <td></td><td class="blue-text">140 предложений</td>
+  </tr>
 
+</table>        
+          
+            <img alt="item" src="../assets/i/knauf.svg">
 
             </div>
           <div class="suggest-item">
-            <div>Популярное предложение</div>
-            <div>39 900 РУБ/ ШТ</div>
+            <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
+            <div class='price'>39 900 </div><div>РУБ/ ШТ</div>
             <div>В наличии</div>
             <button class="catalog">Перейти в магазин</button>
             <div><img alt="item" src="../assets/i/secur.png">Провереннный поставщик</div>
@@ -59,7 +80,7 @@
 
 
     </div>
-  <div class="slidertext2">
+  <div class="slidertext2 container">
     <vueper-slides
         class="no-shadow"
         :visible-slides="3"
@@ -92,27 +113,37 @@ export default {
       {
         title: 'Штукатурка',
         content: 'Штукатурка',
-        image: 'https://verapavlovnamsc.github.io/i/item1.png'
+        image: 'https://filvp.github.io/i/good1.svg'
       },
       {
         title: 'Обои',
         content: 'Slide 2 content.',
-        image: 'https://verapavlovnamsc.github.io/i/item2.png'
+        image: 'https://filvp.github.io/i/good2.svg'
       },
       {
         title: 'Цемент',
         content: 'Slide 2 content.',
-        image: 'https://verapavlovnamsc.github.io/i/item3.png'
+        image: 'https://filvp.github.io/i/good3.svg'
       },
       {
-        title: 'Обои',
+        title: 'Утеплители',
         content: 'Slide 2 content.',
-        image: '.https://verapavlovnamsc.github.io/i/item1.png'
+        image: 'https://filvp.github.io/i/good1.svg'
       },
       {
-        title: 'Обои',
+        title: 'Стекловата',
         content: 'Slide 2 content.',
-        image: 'https://verapavlovnamsc.github.io/i/item1.png'
+        image: 'https://filvp.github.io/i/good1.svg'
+      },
+       {
+        title: 'Теплоизоляторы',
+        content: 'Slide 2 content.',
+        image: 'https://filvp.github.io/i/good1.svg'
+      },
+       {
+        title: 'Стекловата',
+        content: 'Slide 2 content.',
+        image: 'https://filvp.github.io/i/good1.svg'
       }
     ]
   }),
@@ -131,6 +162,15 @@ export default {
 </script>
 
 <style scoped>
+
+.card-item{
+  display: flex;
+  justify-content: space-around;
+ 
+  padding-top: 2em;
+
+}
+
 .card-image{
   display: flex;
   width: 350px;
@@ -139,14 +179,6 @@ export default {
   border-radius: 4px;
   flex-direction: column;
   padding: 1.3em;
-}
-.card-item{
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2em;
-
 }
 .card-text{
   text-align: left;
@@ -186,6 +218,11 @@ export default {
   border: 1px solid grey;
   border-radius: 4px;
   height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 0 .7em;
 }
 .suggest-item{
   border: 1px solid grey;
@@ -200,7 +237,7 @@ export default {
   display: flex;
 }
 .slidertext{
-  width: 80%;
+  width: 84%;
   margin: 0 auto;
   height: 70px !important;
   /*padding-top: -350px;*/
@@ -209,8 +246,8 @@ export default {
 }
 .slidertext2{
   width: 30%;
-  /*padding-top: 5em;*/
-  padding-left: 15em;
+  padding-top: 5em;
+  padding-left: 5em;
   /*display: flex;*/
   /*height: 70px !important;*/
 }
@@ -223,7 +260,13 @@ export default {
 /*h1{*/
 /*  padding: 1em;*/
 /*}*/
-
+h1{
+  text-align: left;
+}
+.price{
+  font-size: 38px;
+  font-weight: bold;
+}
 
 
 .blue-text{
@@ -236,6 +279,7 @@ export default {
 .vueperslides__track{
   height: 70px;
 }
+
 
 
 

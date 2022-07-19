@@ -2,7 +2,7 @@
   <div class="wrapper">
     <Header />
 
-    <nav>
+    <nav class="container">
       <router-link to="/about">Каталог</router-link> >
       <router-link to="/about">Строительные материалы</router-link> >
       <router-link to="/about">Сухие строительные смеси</router-link> >
@@ -38,10 +38,12 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-size: 14px;
 }
 
 nav {
   //padding: 30px;
+  text-align: left;
 
   a {
     font-weight: bold;
@@ -84,5 +86,8 @@ nav {
 }
 .vueperslides__arrow button{
   width: 50%;
+}
+.container {
+  margin: 0 6%; 
 }
 </style>

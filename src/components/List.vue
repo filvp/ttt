@@ -1,10 +1,8 @@
 <template>
   <div class="list">
     {{list.join(", ")}}
-    <div><img alt="item" src="../assets/i/list-icon.png"></div>
-    <div>Список</div>
-
-
+    <img alt="item" src="../assets/i/list_up.svg">
+    Список
   </div>
 </template>
 <script>
@@ -26,12 +24,13 @@ export default {
   border: 1px solid grey;
   border-radius: 4px;
   height: 40px;
-
   display: flex;
-  justify-content: space-around;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .7em;
 }
-.list div{
-  padding: .3em;
+.list img{ 
+  padding-right: .2em;
 }
+
 </style>
