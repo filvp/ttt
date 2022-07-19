@@ -18,8 +18,8 @@ export default {
   }
 }
 </script>
-/*header style*/
-<style>
+// header style
+<style  lang="scss">
 .header__list{
   display: flex;
   align-items: center;
@@ -29,8 +29,10 @@ export default {
   border-radius: 4px;
   height: 40px; 
   font-weight: 600;
+  img {
+    padding-right: .2em;
+  }
 }
-.header__list img{ 
-  padding-right: .2em;
-}
+
 </style>
+

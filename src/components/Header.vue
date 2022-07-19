@@ -30,8 +30,8 @@ export default {
   }
 }
 </script>
-  /*header style*/
-<style>
+// header style
+<style  lang="scss">
 .header__toppart { 
   display: flex;
   justify-content: space-between;
@@ -39,9 +39,6 @@ export default {
   height: 32px;
   margin: 0 6%; 
   font-size: 12px;
-}
-.header__toppart__location div{
-  padding: .2em;
 }
 .header__toppart__upleftmenu{
   display: flex;
@@ -52,13 +49,16 @@ export default {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-}
-.header__toppart__upleftmenu__services div{
-  padding: .9em;
+  div{
+     padding: .2em;
+  }
 }
 .header__toppart__upleftmenu__services{
   display: flex;
   justify-content: space-around;
+  div{
+    padding: .9em;
+  }
 }
 .header__lowerpart__login{
   width: 50px;
@@ -69,7 +69,7 @@ export default {
   vertical-align: middle;
   line-height: 50px;
 }
-.header__lowerpart {
+.header__lowerpart{
   display: flex;
   justify-content: space-around;
   padding: .6em 0;
@@ -84,14 +84,12 @@ export default {
   justify-content: center;
   padding: 0 .7em;
   font-weight: 600;
+  img{
+    padding-right: .2em;
+  }
 }
-.header__lowerpart__catalog img{ 
-  padding-right: .2em;
-}
+
 .header__toppart__upleftmenu__services img{
   padding-left: .5em;
 }
-
-
-
 </style>

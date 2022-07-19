@@ -92,7 +92,7 @@
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 import SimpleTypeahead from 'vue3-simple-typeahead'
-import 'vue3-simple-typeahead/dist/vue3-simple-typeahead.css' //Optional default CSS
+import 'vue3-simple-typeahead/dist/vue3-simple-typeahead.css' 
 
 export default {
   name: 'my-vue-component',
@@ -150,17 +150,7 @@ export default {
 }
 </script>
 // styles for card
-<style scoped>
-h1{
-  text-align: left;
-}
-.title{
-  display: flex;
-  flex-direction: row;
-}
-.title img{
-  padding-left: .5em;
-}
+<style scoped  lang="scss">
 .carditem{
   display: flex;
   justify-content: space-around; 
@@ -215,13 +205,10 @@ h1{
   font-size: 12px;
   padding: 0 .7em;
 }
-
 .carditem__text{
   text-align: left;
   padding: 1.3em;
 }
-
-
 .carditem__suggest{
   border: 1px solid #ECEFF1;
   border-radius: 4px;
@@ -231,12 +218,10 @@ h1{
   width: 27%;
   display: flex;
   flex-direction: column;
+  div{
+    padding: .4em;
+  }
 }
-.carditem__suggest div{
- padding: .4em;
-}
-
-
 .price-text{
   display: flex;
   flex-direction: row;
@@ -256,10 +241,10 @@ h1{
 }
 .uppercase-text{
   text-transform: uppercase;
-  font-weight:
-}
-.uppercase-text img{
-  padding-right: .5em;
+  font-weight:600;
+  img{
+    padding-right: .5em;
+  }
 }
 .catalog{
   background-color: #FED83D;
@@ -272,7 +257,6 @@ h1{
   margin-top: .9em;
   font-weight: 600;
 }
-
 .blue-text{
   color: #1652F0;
 }
@@ -312,6 +296,16 @@ h1{
   padding-top: 5em;
   padding-left: 6em;
 }
+h1{
+  text-align: left;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  img{
+    padding-left: .5em;
+  }
+}
   /* mobile version */
 @media (max-width: 720px) {  
   .carditem__suggest{
@@ -326,5 +320,4 @@ h1{
     line-height: 30px;
   }
 }
-
 </style>

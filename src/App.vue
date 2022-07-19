@@ -1,16 +1,13 @@
 <template>
   <div class="wrapper">
     <Header />
-
     <nav class="container">
       <router-link to="/about"><div class='text-nav'><p >Каталог</p> <p class='small-text'>4 442 512</p></div></router-link> <p class='bread'>></p>
       <router-link to="/about"><div class='text-nav'><p >Строительные материалы</p> <p class='small-text'>4 442 512 предложения</p></div></router-link> <p class='bread'>></p>
       <router-link to="/about"><div class='text-nav'><p >Сухие строительные смеси</p> <p class='small-text'>2 442 012 предложения</p></div></router-link> <p class='bread'>></p>
       <router-link to="/about"><div class='text-nav'><p >Шпаклевки</p> <p class='small-text'>1 442 512 предложения</p></div></router-link> <p class='bread'>></p>
       <router-link to="/"><div class='text-nav'><p >Шпаклевка</p> <p class='small-text'></p></div></router-link>
-    </nav>
-   
-
+    </nav>  
     <router-view/>
   </div>
 </template>
@@ -89,7 +86,6 @@ nav {
 .vueperslide__content-wrapper{
   padding-left: 2em;
 }
-
 .container {
   margin: 0 6%; 
 }

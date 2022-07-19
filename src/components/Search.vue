@@ -11,7 +11,7 @@
 export default {
   data(){
    return {
-     items: ['Гидроизоляция', 'Кровля', 'Обои', 'Полы', 'Стяжки', 'Строительная смесь', 'Стекловата', 'Шпаклевка', 'Штукатурка']
+     items: ['Гидроизоляция', 'Кровля', 'Обои', 'Панели', 'Пенопласт','Полиэтилен', 'Полы','Стяжки', 'Строительная смесь', 'Стекловата', 'Шпаклевка', 'Штукатурка']
    }
   },
   components: {
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 /*header style*/
-<style>
+<style  lang="scss">
 .header__search{
   display: flex;
   justify-content: space-around;
@@ -33,3 +33,5 @@ input{
   border-style: none;
 }
 </style>
+
+
