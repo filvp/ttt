@@ -5,7 +5,7 @@
 </head>
 <template>
 <div class='container'>
-  <h1>Штукатурка цементная цокольная Knauf Sockelpultz 25 кг</h1>
+  <div class='title'><h1>Штукатурка цементная цокольная Knauf Sockelpultz 25 кг</h1><img alt="item" src="../assets/i/share-icon.svg"></div>
   </div>
   <div class="slidertext container">
     <vueper-slides
@@ -315,6 +315,10 @@ h1{
   display: flex;
   flex-direction: row;
   justify-items: center;
+}
+.title{
+  display: flex;
+  flex-direction: row;
 }
 
 
