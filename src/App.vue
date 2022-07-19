@@ -15,13 +15,9 @@
   </div>
 </template>
 <script>
-
-
-
 import Header from "@/components/Header"
 export default {
   components: {
-
     Header
   }
 }
@@ -90,6 +86,10 @@ nav {
 .vueperslides__arrow button{
   width: 50%;
 }
+.vueperslide__content-wrapper{
+  padding-left: 2em;
+}
+
 .container {
   margin: 0 6%; 
 }
@@ -107,5 +107,27 @@ nav {
   line-height: 20px;
   color: #708598;
   line-height: 1px;
+}
+  /* mobile version */
+@media (max-width: 720px) {
+  .nav { font-size: 10px;
+  line-height: 24px;}
+  .carditem{
+    flex-direction: column;
+  }
+  .header{
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  .carditem__suggest{
+    width: 70vw;
+    border: none;
+  }
+  .carditem__image{
+    width: 70vw;
+     border: none;
+  }
 }
 </style>

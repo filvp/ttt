@@ -107,7 +107,7 @@ export default {
       {
         title: 'Описание',
         content: 'Slide 2 content.',
-        image: 'https://filvp.github.io/i/good2.svg'
+        image: 'https://filvp.github.io/i/item.png'
       },
       {
         title: 'Характеристики',
@@ -149,7 +149,7 @@ export default {
   }
 }
 </script>
-
+// styles for card
 <style scoped>
 h1{
   text-align: left;
@@ -168,7 +168,6 @@ h1{
 }
 .carditem__image{
   display: flex;
-  width: 350px;
   height: 290px;
   border: 1px solid #ECEFF1;
   border-radius: 4px;
@@ -239,11 +238,11 @@ h1{
 
 
 .price-text{
-  font-size: 38px;
-  font-weight: bold;
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-items: center;
+  font-size: 38px;
+  font-weight: bold; 
 }
 .green-text{
   font-size: 10px;
@@ -280,8 +279,6 @@ h1{
 .underline-text {
   text-decoration: underline;
   text-decoration-style: dotted;
-  /* border-bottom: 1px red solid;
-  width: 150px; */
 }
 .grey-text{
   color: #708598;
@@ -314,6 +311,20 @@ h1{
   width: 30%;
   padding-top: 5em;
   padding-left: 6em;
+}
+  /* mobile version */
+@media (max-width: 720px) {  
+  .carditem__suggest{
+    width: 70vw;
+    border: none;
+  }
+  .carditem__image{
+    width: 70vw;
+     border: none;
+  }
+  h1{
+    line-height: 30px;
+  }
 }
 
 </style>
