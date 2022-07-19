@@ -79,10 +79,14 @@ export default {
   background-color: #FED83D;
   border-radius: 4px;
   height: 40px;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 .7em;
+  font-weight: 600;
+}
+.header__lowerpart__catalog img{ 
+  padding-right: .2em;
 }
 
 

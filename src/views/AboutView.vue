@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="catalog__page container">
     <p>Строительные смеси</p>
     <p>Гидроизоляционные составы</p>
     <p>Наливные полы, стяжки</p>
@@ -22,3 +22,8 @@
     <p>Пробковые изоляционные материалы</p>
   </div>
 </template>
+<style>
+.catalog__page{
+  text-align: left;
+}
+</style>

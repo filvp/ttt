@@ -99,7 +99,7 @@ nav {
   justify-items: center;
 }
 .bread {
-  margin-top: 7px;
+  margin-top: 4px;
   padding: 1.9em;
 }
 .small-text{

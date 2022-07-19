@@ -28,6 +28,7 @@ export default {
   border: 1px solid #ECEFF1;
   border-radius: 4px;
   height: 40px; 
+  font-weight: 600;
 }
 .header__list img{ 
   padding-right: .2em;
