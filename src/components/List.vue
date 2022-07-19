@@ -1,5 +1,5 @@
 <template>
-  <div class="list">
+  <div class="header__list">
     {{list.join(", ")}}
     <img alt="item" src="../assets/i/list_up.svg">
     Список
@@ -8,7 +8,6 @@
 <script>
 export default {
   data(){
-
   },
   computed: {
     list(){
@@ -19,18 +18,18 @@ export default {
   }
 }
 </script>
+/*header style*/
 <style>
-.list{
-  border: 1px solid grey;
-  border-radius: 4px;
-  height: 40px;
+.header__list{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 .7em;
+  border: 1px solid #ECEFF1;
+  border-radius: 4px;
+  height: 40px; 
 }
-.list img{ 
+.header__list img{ 
   padding-right: .2em;
 }
-
 </style>

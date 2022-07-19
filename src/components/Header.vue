@@ -44,7 +44,7 @@ export default {
   padding: .2em;
 }
 .header__toppart__upleftmenu{
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
