@@ -72,13 +72,13 @@
     <div class="suggest-item">
             <div><img alt="item" src="../assets/i/star-icon.svg">Популярное предложение</div>
             <div class="price-text"><div class='price'>39 900 </div><div>РУБ/ ШТ</div></div>
-            <div>В наличии</div>
+            <div class='green-text'>В наличии</div>
             <div class="catalog">Перейти в магазин</div>
             <div class='postavshik'><div ><img alt="item" src="../assets/i/secur.png"></div>
             <div>
-            <p>Провереннный поставщик</p>
+            <p class='green-text'>Провереннный поставщик</p>
             <p>ООО ВсеИнструменты.ру</p>
-            <p>Дилер</p>
+            <p class='green-text'>Дилер</p>
             </div>
             <div><img alt="item" src="../assets/i/allinstruments.svg"></div>
             </div>
@@ -285,6 +285,12 @@ h1{
   font-size: 38px;
   font-weight: bold;
 }
+.green-text{
+  font-size: 10px;
+  line-height: 10px;
+  color: #05B169;
+  text-transform: uppercase;
+}
 
 
 .blue-text{
@@ -293,13 +299,15 @@ h1{
 .underline {
   text-decoration: underline;
   text-decoration-style: dotted;
+  /* border-bottom: 1px red solid;
+  width: 150px; */
 }
 .vueperslides__track{
   height: 70px;
 }
 .postavshik{
   display: flex;
-  justify-content: space-around;
+  justify-content:first baseline;
   justify-items: center;
   margin-top: .8em;
 }

@@ -3,11 +3,11 @@
     <Header />
 
     <nav class="container">
-      <router-link to="/about">Каталог</router-link> >
-      <router-link to="/about">Строительные материалы</router-link> >
-      <router-link to="/about">Сухие строительные смеси</router-link> >
-      <router-link to="/about">Шпаклевки</router-link> >
-      <router-link to="/">Шпаклевка</router-link>
+      <router-link to="/about"><div class='text-nav'><p >Каталог</p> <p class='small-text'>4 442 512</p></div></router-link> <p class='bread'>></p>
+      <router-link to="/about"><div class='text-nav'><p >Строительные материалы</p> <p class='small-text'>4 442 512 предложения</p></div></router-link> <p class='bread'>></p>
+      <router-link to="/about"><div class='text-nav'><p >Сухие строительные смеси</p> <p class='small-text'>4 442 512 предложения</p></div></router-link> <p class='bread'>></p>
+      <router-link to="/about"><div class='text-nav'><p >Шпаклевки</p> <p class='small-text'>4 442 512 предложения</p></div></router-link> <p class='bread'>></p>
+      <router-link to="/"><div class='text-nav'><p >Шпаклевка</p> <p class='small-text'></p></div></router-link>
     </nav>
    
 
@@ -39,15 +39,21 @@ body{
   text-align: center;
   color: #2c3e50;
   font-size: 14px;
+  line-height: 24px;
 }
 
 nav {
   //padding: 30px;
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  line-height: 1px;
+  text-decoration: none;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+     text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
@@ -89,5 +95,20 @@ nav {
 }
 .container {
   margin: 0 6%; 
+}
+.text-nav{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.bread {
+  margin-top: 17px;
+  padding: .9em;
+}
+.small-text{
+  font-size: 12px;
+  line-height: 20px;
+  color: #708598;
+  line-height: 1px;
 }
 </style>
